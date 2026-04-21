@@ -7,6 +7,8 @@ if os.path.isfile("data.json"):
 
     ####
     #### YOUR CODE HERE 
+    with open("data.json", "r") as f:
+        data = json.load(f)
     ####
 
 else:
@@ -24,5 +26,7 @@ data[name] = recommendation
 
 ####
 #### YOUR CODE HERE 
+with open("data.json", "w") as f:
+    json.dump(data, f)
 ####
 
