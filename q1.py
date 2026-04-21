@@ -2,4 +2,7 @@
 
 ####
 #### YOUR CODE HERE 
+with open("q1.txt", "r") as f:
+    text = f.read()
+    print(text)
 ####
